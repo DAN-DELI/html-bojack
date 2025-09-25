@@ -10,9 +10,10 @@
 </head>
 <body>
 
+  <!--LISTA DE NAVEGACION-->
 <div class="nav">
     <ul>
-      <li><a href="#" class="nav__link">Capitulo 1</a></li>
+      <li><a href="dedo.html" class="nav__link">Capitulo 1</a></li>
       <li><a href="#" class="nav__link">Capitulo 2</a></li>
       <li><a href="#" class="nav__link">Capitulo 3</a></li>
       <li><a href="#" class="nav__link">Capitulo 4</a></li>
@@ -22,6 +23,7 @@
 </div>
 <main>
 
+<!--CARD DE BOJACK-->
 <section class="section-bojack">
   <div class="card">
     <h1 class="card__titulo">The fucking bojack</h1>
@@ -30,7 +32,33 @@
     <h2 class="card__titulo2">¿Que significa esta reflexion?</h2>
     <p class="card__p">Es una confesión de culpa y desesperanza: cree que incluso cuando intenta mejorar, su propio “defecto de fábrica” se lo impide.</p>
   </div>
+</section>
 
+<!--SECCION DE CONTACTO-->
+<section class="contacto">
+  <div class="contacto__contenedor">
+    <form class="contacto__form">
+      <div class="contacto__item">
+        <label for="nombre">Nombres</label>
+        <input type="text" id="nombre" name="nombre" minlength="2" maxlength="30" required>
+      </div>
+      <div class="contacto__item">
+        <label for="apellido">Apellidos</label>
+        <input type="text" id="apellido" name="apellido" minlength="2" maxlength="30" required>
+      </div>
+      <div class="contacto__item">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="01" max="99" required>
+      </div>
+      <div class="contacto__item">
+        <label for="email">Correo electronico</label>
+        <input type="email" id="email" name="email"  placeholder="ejemplo@gmail.com" required>
+      </div>
+      <div class="button button__contacto--borde">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
 </section>
 
 </main>
