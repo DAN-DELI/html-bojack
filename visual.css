@@ -12,6 +12,8 @@ body {
     background-color: #0B132B;
     padding: 30px;
     margin-bottom: 15px;
+    width: 100%;
+    align-items: baseline;
 }
 
 .nav ul {
@@ -43,24 +45,29 @@ body {
   .nav ul {
     flex-wrap: wrap;          /* permite varias filas */
     justify-content: center;  /* centra los ítems */
-    gap: 15px;                /* menos espacio en móvil */
     padding: 0;               /* quita relleno extra */
+    margin: inherit;
+    margin: 0 auto;
   }
 
   .nav li {
-    flex: 1 1 auto;           /* que se adapten sin recortarse */
-    min-width: 100px;         /* ancho mínimo para que no se deformen */
-    max-width: 150px;         /* ancho máximo para controlar */
+    min-width: 44%;         /* ancho mínimo para que no se deformen */
+    flex-direction: column;
   }
 
   .nav {
     padding: 15px;            /* reduce padding en móviles */
+    align-items: baseline;
+  }
+
+  li.nav__button--min {
+    display: inherit;
+    padding: 10px;
   }
 
   .nav__link {
     display: block;
     text-align: center;
-    width: 100%;              /* ocupa todo el espacio del li */
     white-space: nowrap;      /* evita que “Capitulo” se parta en 2 líneas */
   }
 }
