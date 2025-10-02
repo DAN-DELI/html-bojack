@@ -38,32 +38,33 @@ body {
     border: 1px solid #5BC0BE;
 }
 
-/* Media quare de la lista de navegacion para telefonos*/
+/* Media query de navegación para teléfonos */
 @media (max-width: 767px) {
   .nav ul {
-    flex-wrap: wrap; /* de fila pasa a columna */
-    gap: 43px; /* menos separación para que no se vean tan lejos */
-    align-items: center; /* opcional, centra los botones */
-    width: none;
+    flex-wrap: wrap;          /* permite varias filas */
+    justify-content: center;  /* centra los ítems */
+    gap: 15px;                /* menos espacio en móvil */
+    padding: 0;               /* quita relleno extra */
   }
 
   .nav li {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    width: 94px;
+    flex: 1 1 auto;           /* que se adapten sin recortarse */
+    min-width: 100px;         /* ancho mínimo para que no se deformen */
+    max-width: 150px;         /* ancho máximo para controlar */
   }
 
   .nav {
-    padding: 15px; /* reduce padding en móviles */
+    padding: 15px;            /* reduce padding en móviles */
   }
 
   .nav__link {
     display: block;
     text-align: center;
-    width: 100%;  /* opcional, ocupa todo el ancho del contenedor */
-    max-width: 250px; /* controla que no se haga gigante */
+    width: 100%;              /* ocupa todo el espacio del li */
+    white-space: nowrap;      /* evita que “Capitulo” se parta en 2 líneas */
   }
 }
+
 
 
 
